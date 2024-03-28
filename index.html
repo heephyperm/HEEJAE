@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>희재는??</title>
+    <title>희재력테스트 by 희피펌</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     <meta property="og:type" content="website">
-    <meta property="og:title" content="희재는??">
+    <meta property="og:title" content="희재력테스트??">
     <meta property="og:image" content="./imgaes/heejae_og.png">
     <meta property="og:description" content="Description Here">
     <meta property="og:site_name" content="Site Name">
     <meta property="og:locale" content="en_US">
     
-    <!-- 필수는 아니지만, 추천하는 og 태그 -->
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 </head>
@@ -66,229 +65,321 @@
         border-collapse: collapse;
         border-spacing: 0;
     }
-    @font-face {
+    /* @font-face {
         font-family: 'NeoDunggeunmoPro-Regular';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
+    } */
+    @font-face {
+        font-family: 'SangSangShinb7';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
-      body {
-        background-color: #0c143b;
-        font-family: 'NeoDunggeunmoPro-Regular';
-        font-size: 10px;
-     }
 
-      .landing {
+    /* @font-face {
+        font-family: 'TTHakgyoansimKkokkomaR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKkokkomaR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Beeunhye';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Beeunhye.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } */
+        
+    body {
+        background:#ffffed url(/images/heejae_bg.png) no-repeat 50% top/100%;
+        font-family: 'SangSangShinb7';
+        font-size: 10px;
+        box-sizing:border-box;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .landing {
         display: block;
         position: relative;
         max-width: 40rem;
         margin: 0 auto;
         text-align:center;
         overflow: hidden;
-      }
+    }
 
+    .copy-text{font-size:1rem;}
+    img{max-width:100%;}
+    .intro-col{padding-top:3rem;}
+    .intro-col .intro-box{padding:0rem 2rem 2.5rem; background-color:#fff; border:3px solid #ffca6f; border-radius:2rem;}
+    .intro-col .intro-box img{max-width:70%;}
+    .intro-col .intro-box h1{height:10rem; font-size:4rem;}
+    .intro-col .intro-box h1 span{position:relative; top:1rem; display:inline-block; animation:bounce .4s ease infinite alternate; font-size:8rem; font-weight:700; color:#ffca6f; 
+    text-shadow:0 1px 0 #c4b293,
+        0 2px 0 #c4b293,
+        0 3px 0 #c4b293,
+        0 4px 0 #c4b293,
+        0 5px 0 #c4b293,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);;
+    }
+    .intro-col .intro-box a{display:block; width:70%; height:4rem; margin:1rem auto 0; line-height:4rem; font-size:3rem; background-color:#ffca6f;font-weight: 700; color:#fff; text-decoration:none;}
+    @keyframes bounce {
+    100% {
+        top: -10px;
+        text-shadow: 0 1px 0 #c4b293,
+                    0 2px 0 #c4b293,
+                    0 3px 0 #c4b293,
+                    0 4px 0 #c4b293,
+                    0 5px 0 #c4b293,
+                    0 6px 0 #c4b293,
+                    0 7px 0 #c4b293,
+                    0 8px 0 #c4b293,
+                    0 9px 0 #c4b293,
+                    0 50px 25px rgba(0, 0, 0, .2);
+    }
+    }
+    .intro-col .intro-box h1 span:nth-child(2){animation-delay:.1s}
+    .intro-col .intro-box h1 span:nth-child(3){animation-delay:.2s}
+    .intro-col .intro-box h1 span:nth-child(4){animation-delay:.3s}
+    .intro-col .intro-box h1 span:nth-child(5){animation-delay:.4s}
+    .intro-col .intro-box h1 span:nth-child(6){animation-delay:.5s}
 
-     .quiz-col{padding:2rem 0;}
-     .quiz-col .rest-box{margin-bottom:3.2rem;}
-     .quiz-col .rest-box .progress-bar{width:100%; height:.4rem; margin-bottom:3rem; background-color:#ECECF6;}
-     .quiz-col .rest-box .progress-bar span{display:block; width:0%; height:100%; background-color:#ff6000; transition:1s all linear;}
-     .quiz-col .rest-box em{font-size:2.2rem; color:#fff; text-shadow:.2rem .2rem #f500d0;}
-     .quiz-col .quiz-box{padding:3.2rem 1.9rem; background-color:#fff; box-shadow:0 0 1rem rgba(0,0,0,0.1); border-radius:1.2rem;}
-     .quiz-col .quiz-box em{display:inline-block; padding:.3rem .8rem; font-size:1rem; color:#fff; background-color:#59AFFF; border-radius:.2rem;}
-     .quiz-col .quiz-box strong{display:block; margin-top:2.4rem; font-size:2rem; word-break:keep-all;}
-     .quiz-col .quiz-box p{margin-top:.8rem; font-size:2rem; color:#717188;}
-     .quiz-col .answer-box{margin-top:3.2rem;}
-     .quiz-col .answer-box span{display:block; width:100%; height:4.8rem; line-height:4.8rem; box-sizing:border-box;}
-     .quiz-col .answer-box span + span{margin-top:1.6rem;}
-     .quiz-col .answer-box label{display:block; position:relative; width:100%; height:100%; font-size:1.6rem; border:1px solid #DFDFEA; border-radius:2rem;  cursor:pointer;}
-     .quiz-col .answer-box span input[type="radio"]:checked + label{font-weight:700; border-color:#28284B;}
-     .quiz-col .answer-box span.correct input[type="radio"] + label, .quiz-col .answer-box span.correct-answer input[type="radio"] + label{color:#17C624; border-color:#17C624;}
-     .quiz-col .answer-box span.wrong input[type="radio"] + label{color:#FF5647; border-color:#FF5647;}
-     .quiz-col .answer-box span.correct-answer input[type="radio"] + label::after{content:'정답을 확인해 보세요'; position:absolute; left:0; top:-.9rem; width:10.4rem; height:1.8rem; font-size:1rem; line-height:1.8rem; color:#fff; background-color:#17C624; border-radius:1rem;}
-     .quiz-col .answer-box span.correct-answer input[type="radio"] + label::before{content:''; position:absolute; left:2rem; top:.6rem; width:0; height:0; border-bottom:.5rem solid #17C624; border-top:.5rem solid transparent; border-left:.5rem solid #17C624; border-right:.5rem solid transparent; transform:rotate(180deg);}
+    .quiz-col{padding:2rem 0 10rem;}
+    .quiz-col .rest-box{margin-bottom:1rem;}
+    .quiz-col .rest-box .progress-bar{width:calc(100% - 4px); height:.8rem; margin:0 auto 2rem; background-color:#fff; border-radius:.5rem; border:2px solid #ffca6f; overflow:hidden;}
+    .quiz-col .rest-box .progress-bar span{display:block; width:0%; height:100%; background-color:#ffca6f; transition:1s all linear;}
+    .quiz-col .rest-box em{font-size:3.2rem; font-weight:900;}
+    .quiz-col .quiz-box{padding:2rem 1.9rem; background-color:#fff; border:2px solid #ffca6f; border-radius:1.2rem;}
+    .quiz-col .quiz-box em{display:inline-block; padding:.3rem .8rem; font-size:2.2rem; color:#e74a3d;}
+    .quiz-col .quiz-box strong{display:block; margin:1rem 0; font-size:2.6rem; font-weight:600; word-break:keep-all;}
+    .quiz-col .quiz-box p{margin-top:.8rem; font-size:2rem; color:#717188;}
+    .quiz-col .answer-box{display:flex; margin-top:2rem; flex-wrap:wrap; justify-content:center; gap:1rem;}
+    .quiz-col .answer-box span{display:block; width:calc(50% - 1rem); height:3rem; line-height:3rem; box-sizing:border-box;}
+    /* .quiz-col .answer-box span + span{margin-top:1.6rem;} */
+    .quiz-col .answer-box label{display:block; position:relative; width:100%; height:100%; font-size:2rem; font-weight:500; border:2px solid #ffca6f;  cursor:pointer; border-radius:.5rem;}
+    .quiz-col .answer-box span input[type="radio"]:checked + label{font-weight:700; border-color:#28284B;}
+    .quiz-col .answer-box span.correct input[type="radio"] + label, .quiz-col .answer-box span.correct-answer input[type="radio"] + label{color:#6bc25a; border-color:#6bc25a;}
+    .quiz-col .answer-box span.wrong input[type="radio"] + label{color:#e74a3d; border-color:#e74a3d;}
+    .quiz-col .answer-box span.correct-answer input[type="radio"] + label::after{content:'정답을 확인해 보세요'; position:absolute; left:-1rem; top:-1.5rem; width:10.4rem; height:1.8rem; font-size:1.4rem; line-height:1.8rem; color:#fff; background-color:#6bc25a; border-radius:1rem;}
+    .quiz-col .answer-box span.correct-answer input[type="radio"] + label::before{content:''; position:absolute; left:2rem; top:0rem; width:0; height:0; border-bottom:.5rem solid #6bc25a; border-top:.5rem solid transparent; border-left:.5rem solid #6bc25a; border-right:.5rem solid transparent; transform:rotate(180deg);}
+    .quiz-col .result-box p{font-size:3rem; margin-bottom:1rem; font-weight:700; color:#000;}
+    .quiz-col .result-box p span{font-size:120%;}
+    .quiz-col .result-box img{max-width:80%;}
 
-      .fixed-box {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-      }
-      .fixed-box button {
-        width:100%;
-        padding: 2rem;
-        font-weight: 700;
-        font-size: 1.4rem;
-        background: #CFCFDA;
-        color:#fff;
-        cursor:default;
-        outline:none;
-        border:0;
-      }
-      .fixed-box button:disabled{cursor:default;}
-      .fixed-box button.active{background-color:#ff6000; cursor:pointer;}
-      .fixed-box button.correct-active::before{content:'정답!'; display:inline-block; margin-right:.3rem; color:#17C624;}
+    .fixed-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    }
+    .fixed-box button {
+    width:100%;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size:2.4rem;
+    background: #CFCFDA;
+    color:#fff;
+    cursor:default;
+    outline:none;
+    border:0;
+    font-family:inherit;
+    }
+    .fixed-box button:disabled{cursor:default;}
+    .fixed-box button.active{background-color:#6bc25a; cursor:pointer;}
+    .fixed-box button.correct-active::before{content:'정답!'; display:inline-block; margin-right:.3rem; color:#e74a3d;}
+    .fixed-box a{display:none; width:100%; padding:2rem; font-weight:700; font-size:2.5rem; color:#fff; background-color:#ffca6f; text-decoration:none; box-sizing:border-box;}
+      
+    @media screen and (max-width : 1024px) {
+        body {
+            background:#ffffed url(/images/m_heejae_bg.png) repeat-y 50%/cover;
+        }
+
+        .copy-text{font-size:.8rem;}
+        .intro-col{padding:3rem 1rem;}
+        .intro-col .intro-box h1{height:7rem;}
+        .intro-col .intro-box h1 span{font-size:4.5rem; animation-duration:.5s;}
+        .intro-col .intro-box img{max-width:100%;}
+        .intro-col .intro-box a{width:100%; font-size:2.6rem;}
+    
+        .quiz-col{padding:2rem 1rem 6rem;}
+        .quiz-col .rest-box em{font-size:2.4rem;}
+        .quiz-col .quiz-box{padding:1rem 0 2rem;}
+        .quiz-col .quiz-box em{font-size:1.6rem;}
+        .quiz-col .quiz-box strong{margin:.5rem 0; font-size:1.8rem;}
+        .quiz-col .answer-box label{font-size:1.5rem;}
+        .quiz-col .answer-box{gap:.5rem;}
+        .quiz-col .result-box p{font-size:2.5rem;}
+        .quiz-col .question-image{padding:0 1rem;}
+        .quiz-col .answer-box span.correct-answer input[type="radio"] + label::after{width:8rem; font-size:1.2rem;}
+        .fixed-box button{font-size:1.8rem; padding:1rem;}
+        .fixed-box a{font-size:1.8rem; padding:1rem;}
+
+        
+        
+    }
     </style>
-    <section class="landing gnb-none">
-      <div class="quiz-col">
-        <div class="inner-col">
-            <div class="rest-box">
-                <div class="progress-bar">
-                    <span class="progress"></span>
+    <section class="landing">
+        <em class="copy-text">&copy made by HEEPHYPERM from.X</em>
+        <div class="intro-col">
+            <div class="inner-col">
+                <div class="intro-box">
+                    <h1>
+                        <span>희</span>
+                        <span>재</span>
+                        <span>력</span>
+                        <span>테</span>
+                        <span>스</span>
+                        <span>트</span>
+                    </h1>
+                    <img src="/images/heejae_start.jpg" alt="">
+                    <a href="#" class="start-button">희재력 테스트 시작하기</a>
                 </div>
-                <em>총 <span id="totalQuestion"></span>문제 중 <span id="remainQuestion"></span>문제가 남았어요!</em>
             </div>
-          <div class="quiz-box">
-            <em>Question <span id="questionNum"></span></em>
-            <strong id="question"></strong>
-            <div class="answer-box" id="answerBox"></div>
-          </div>
         </div>
-      </div>
-      <div class="fixed-box">
-        <button type="button" class="btn-answer check-answer">정답 확인하기</button>
-      </div>
+        <div class="quiz-col" style="display:none">
+            <div class="inner-col">
+                <div class="rest-box">
+                    <div class="progress-bar">
+                        <span class="progress"></span>
+                    </div>
+                    <em>총 <span id="totalQuestion"></span>문제 중 <span id="remainQuestion"></span>문제가 남았어요!</em>
+                </div>
+            <div class="quiz-box">
+                <em>Question. <span id="questionNum"></span></em>
+                <strong id="question"></strong>
+                <div class="question-image">
+                    <img src="" alt="Question Image">
+                </div>
+                <div class="answer-box" id="answerBox"></div>
+            </div>
+            </div>
+        </div>
+        <div class="fixed-box" style="display:none">
+            <button type="button" class="btn-answer check-answer">정답 확인하기</button>
+            <a href="#" onclick="history.go(0)">다시 풀어보기</a>
+        </div>
     </section>
 
     <script type="text/javascript">
         const quizData = [
             {
-                question: "희재의 생년월일은 언제일까요?",
-                choices: ["1995/06/09", "1995/10/03", "1997/06/09", "1997/10/03"],
-                answer: 0
-            },
-            {
-                question: "희재의 공식데뷔일은 언제일까요?",
-                choices: ["2020/03/10","2020/03/11", "2020/03/12","2020/03/13"],
+                question: "뮤지컬 <모차르트!> 공연 중 희차르트 첫 공연일자는 언제일까요?",
+                choices: ["2023/08/13", "2023/06/23", "2023/06/17", "2023/08/22"],
+                image: "/images/heejae_question_1.png",
                 answer: 2
             },
             {
-                question: "희재 이름의 한자와 훈음은 무엇일까요?",
-                choices: ["喜渽(기쁠 희 맑을 재)","熙栽(빛날 희 심을 재)", "喜栽(기쁠 희 심을 재)", "熙渽(빛날 희 맑을 재)"],
-                answer: 1
-            },
-            {
-                question: "희재의 첫 정규앨범인 '희재'에 수록되지 않은 곡은?",
-                choices: ["따라따라와", "꽃이 필때 그대에게 가겠소", "당신만이", "풍악"],
+                question: "해당 사진에 해당하는 행사명을 고르시오.",
+                choices: ["드림콘서트 트롯","k-트롯 페스티벌", "양산 웅상 회야제","경기북부 음악예술제"],
+                image: "/images/heejae_question_2.jpg",
                 answer: 0
             },
             {
-                question: `별 그대 가사 중 빈칸에 들어갈 가사는? 어두운 밤이 지나도 별은 아직 거기 있네요 () 내겐 너무 좋았습니다`,
-                choices: ["사나운 바람도 불던 날도","우리 함께 오른 그 언덕길이", "나만을 밝혀주는 그대라는 별","따뜻하게 내 이름 불러준 당신"],
-                answer: 1
+                question: "희재가 음악방송 첫 1위한 날짜는?",
+                choices: ["2023/04/10","2023/04/17", "2023/05/01", "2023/05/15"],
+                answer: 0
             },
             {
-                question: "희재가 고른 밸런스 게임 보기는?",
-                choices: ["낮에 단둘이 이성친구와 술 마시는 애인", "밤에 단둘이 이성친구와 커피 마시는 애인"],
-                answer: 1
+                question: "해당 사진에 해당하는 행사명을 고르시오.",
+                choices: ["천촌만락 삼성현문화축제", "영주 소백산 철쭉제", "무안 군민의 날", "금천 하모니 축제"],
+                image: "/images/heejae_question_3.jpg",
+                answer: 2
             },
             {
-                question: "희재의 팬콘서트 ‘별, 그대’ 서울 앵콜 콘서트 중 앵콜로 부른 마지막 곡은?",
-                choices: ["잊지 말아요","나는 남자다", "너를 만나서", "어느 멋진 날"],
+                question: `희재의 정규앨범 2집 '희로애락' 중 '노'에 해당하는 노래는?`,
+                choices: ["꽃마리","떠나간다", "우야노","당신은 왜!"],
                 answer: 3
             },
             {
-                question: "희재가 다섯 글자로 표현한 희랑별은?",
-                choices: ["나의 전부야", "나의 자랑들", "나의 모든 것", "영원히 함께"],
+                question: "해당 사진에 해당하는 행사명을 고르시오.",
+                choices: ["주왕산 시와 국악의 만남", "최치원문화제", "지리산함양 고종시곶감축제", "완도해양치유센터 축하콘서트"],
+                image: "/images/heejae_question_4.jpg",
                 answer: 0
             },
             {
-                question: "희재가 좋아하는 날씨는?",
-                choices: ["구름 한점없이 맑은 날","비가 주륵주륵 오는 날", "펑펑 눈이 오는 날","날이 흐려 시원한 날"],
+                question: "희재가 출연하지 않은 라디오를 골라보시오.",
+                choices: ["두시탈출 컬투쇼","황제성의 황제파워", "윤정수 남창희의 미스터라디오", "김영철의 파워FM"],
                 answer: 1
             },
             {
-                question: "희재가 고등학생 때 출연한 전국노래자랑 지역은?",
+                question: "해당 사진에 해당하는 행사명을 고르시오.",
+                choices: ["2024 카운트다운 부산", "올림픽 K-컬처 페스티벌", "동락 국악트롯콘서트", "태안 송년음악회"],
+                image: "/images/heejae_question_5.jpg",
+                answer: 2
+            },
+            {
+                question: "프로그램 <전국노래자랑> 중 희재가 출연하지 않은 편은? ",
+                choices: ["경상북도 구미시","전라남도 담양군", "서울특별시 성동구 편","인천광역시 서구"],
+                answer: 3
+            },
+            {
+                question: "해당 사진에 해당하는 행사명을 고르시오.",
                 choices: ["팔도명물총집합편","울산 중구 편", "경북 구미 편", "서울 성동구 편"],
                 answer: 3
             },
         ];
 
+        function startQuiz() {
+            let introPage = document.querySelector('.intro-col');
+            introPage.style.display = 'none'; // 인트로 페이지 숨기기
 
-    $(function(){
-        let progressBar = document.querySelector('.progress');
-        let prgressValue = 0;
-        
-        let answer = 0;  
-        let correctCount = 0;
-        let questionNum = document.querySelector('#questionNum')
-        let question = document.querySelector('#question');
-        let answerBox = document.querySelector('#answerBox');
-        let btnAnswer  = document.querySelector('.btn-answer');
-
-        btnAnswer.disabled = true;
-        question.innerHTML = quizData[0].question;
-        questionNum.textContent = answer + 1;
-        document.querySelector('#totalQuestion').textContent = quizData.length;
-        document.querySelector('#remainQuestion').textContent = quizData.length - answer;
-        
-        for(let i = 0; i<quizData[0].choices.length; i++) {
-            answerBox.innerHTML += '<span class="form-check"><input class="form-check-input" type="radio" name="question" id="question-'+i+'"><label for="question-'+i+'">'+quizData[0].choices[i]+'</label></span>';
-            
-            if(quizData[0].choices[i] === quizData[0].answer){
-                alert('lkj')
-            }
-            // console.log(quizData[0].answer)
+            let quizBox = document.querySelector('.quiz-col');
+            let fixedBox = document.querySelector('.fixed-box');
+            quizBox.style.display = 'block'; // 퀴즈 박스 보이기
+            fixedBox.style.display = 'block'; // 퀴즈 박스 보이기
         }
+        document.addEventListener('DOMContentLoaded', function () {
+            // 테스트 시작하기 버튼에 이벤트 리스너 추가
+            let startButton = document.querySelector('.start-button');
+            startButton.addEventListener('click', startQuiz);
+        });
 
+        $(function(){
+            let progressBar = document.querySelector('.progress');
+            let prgressValue = 0;
+            
+            let answer = 0;  
+            let correctCount = 0;
+            let questionNum = document.querySelector('#questionNum')
+            let question = document.querySelector('#question');
+            let answerBox = document.querySelector('#answerBox');
+            let btnAnswer  = document.querySelector('.btn-answer');
+            let questionImage = document.querySelector('.question-image img');
 
-    
-        let inputRadio = document.querySelectorAll('input[type=radio][name=question]');
-        inputRadio.forEach(radio => radio.addEventListener('change', () => {
-            const formCheck = radio.closest('.form-check');
-            btnAnswer.disabled = false; 
-            btnAnswer.classList.add('active');
-            btnAnswer.textContent  = '다음문제를 풀어보세요';
-            inputRadio.forEach(radio => radio.disabled = true);
-
-            let selectedIndex = Array.from(inputRadio).findIndex(radio => radio.checked);
-
-            if (selectedIndex === quizData[answer].answer) {
-                formCheck.classList.add('correct');
-                document.querySelector('.btn-answer').classList.add('correct-active');
-                correctCount++;
+            // 초기화할 때 첫 번째 질문의 이미지를 설정합니다.
+            if (quizData[0].image) {
+                questionImage.src = quizData[0].image;
             } else {
-                formCheck.classList.add('wrong');
-                document.querySelectorAll('.form-check')[quizData[answer].answer].classList.add('correct-answer');
-            }
-        }));
-        
-
-        btnAnswer.addEventListener('click',function(){
-            if (!document.querySelector('input[name=question]:checked')) {
-                return;
+                questionImage.style.display = 'none'; // 이미지가 없으면 숨깁니다.
             }
 
-            answer ++;
-            answerBox.innerHTML = '';
-
-            if (answer === quizData.length) {
-                document.querySelector('.quiz-box').innerHTML = '';
-                document.querySelector('.quiz-box').innerHTML += '<p>문제 풀이 완료</p>'
-                btnAnswer.textContent = '문제 풀이 완료'
-                document.querySelector('#remainQuestion').textContent = 0;
-                document.querySelector('.btn-answer').classList.remove('correct-active');
-               
-                alert(`총 ${quizData.length}문제 중 ${correctCount}문제를 맞췄습니다!`);
-
-                return;
-            }
-
+            btnAnswer.disabled = true;
+            question.innerHTML = quizData[0].question;
             questionNum.textContent = answer + 1;
-
-            question.innerHTML = quizData[answer].question;
+            document.querySelector('#totalQuestion').textContent = quizData.length;
             document.querySelector('#remainQuestion').textContent = quizData.length - answer;
-
-            for(let i = 0; i<quizData[answer].choices.length; i++) {
-                answerBox.innerHTML += '<span class="form-check"><input class="form-check-input" type="radio" name="question" id="question-'+i+'"><label for="question-'+i+'">'+quizData[answer].choices[i]+'</label></span>';
+            
+            // 첫 번째 질문의 선택지를 생성합니다.
+            for(let i = 0; i<quizData[0].choices.length; i++) {
+                answerBox.innerHTML += '<span class="form-check"><input class="form-check-input" type="radio" name="question" id="question-'+i+'"><label for="question-'+i+'">'+quizData[0].choices[i]+'</label></span>';
+                
+                if(quizData[0].choices[i] === quizData[0].answer){
+                    alert('lkj')
+                }
+                // console.log(quizData[0].answer)
             }
 
-            inputRadio = document.querySelectorAll('input[type=radio][name=question]');
+            let inputRadio = document.querySelectorAll('input[type=radio][name=question]');
             inputRadio.forEach(radio => radio.addEventListener('change', () => {
-                document.querySelector('.btn-answer').classList.add('active')
-                btnAnswer.textContent  = '다음문제를 풀어보세요';
                 const formCheck = radio.closest('.form-check');
-                document.querySelector('.btn-answer').classList.add('active');
+                btnAnswer.disabled = false; 
+                btnAnswer.classList.add('active');
+                btnAnswer.textContent  = '다음문제를 풀어보세요';
                 inputRadio.forEach(radio => radio.disabled = true);
 
                 let selectedIndex = Array.from(inputRadio).findIndex(radio => radio.checked);
@@ -303,17 +394,88 @@
                 }
             }));
 
-            btnAnswer.textContent  = '정답 확인하기';
-            document.querySelector('.btn-answer').classList.remove('correct-active');
-            document.querySelector('.btn-answer').classList.remove('active');
+            btnAnswer.addEventListener('click',function(){
+                if (!document.querySelector('input[name=question]:checked')) {
+                    return;
+                }
 
-            progressValue = answer / (quizData.length - 1) * 100;
-            progressBar.style.width = progressValue + '%';
-            
-        });
+                answer ++;
+                answerBox.innerHTML = '';
+                
 
-    })
-     
+                if (answer === quizData.length) {
+                    document.querySelector('.quiz-box').innerHTML = '';
+                    document.querySelector('.quiz-col .rest-box em').style.display = 'none';
+                    document.querySelector('.fixed-box button').style.display = 'none';
+                    document.querySelector('.fixed-box a').style.display = 'block';
+
+                    document.querySelector('#remainQuestion').textContent = 0;
+                    document.querySelector('.btn-answer').classList.remove('correct-active');
+                    document.querySelector('.quiz-box').innerHTML += '<div class="result-box"></div>';
+                
+                    // alert(`총 ${quizData.length}문제 중 ${correctCount}문제를 맞췄습니다!`);
+                    let resultBox = document.querySelector('.result-box');
+                    let resultMessage = `<p>🧡당신은 <span>${correctCount}</span> 희재력🧡</p>`;
+                    let imageUrl = "/images/heejae_result.jpg";
+                    let resultContent = document.createElement('div');
+                    resultContent.classList.add('result-content');
+                    resultContent.innerHTML = `
+                        ${resultMessage}
+                        <img src="${imageUrl}" alt="Result Image">
+                    `;
+                    resultBox.appendChild(resultContent);
+                    return;
+                }
+
+                questionNum.textContent = answer + 1;
+
+                question.innerHTML = quizData[answer].question;
+                document.querySelector('#remainQuestion').textContent = quizData.length - answer;
+
+                // 현재 질문의 이미지를 설정합니다.
+                if (quizData[answer].image) {
+                    questionImage.src = quizData[answer].image;
+                    questionImage.style.display = 'block'; // 이미지가 있으면 보이도록 설정합니다.
+                } else {
+                    questionImage.style.display = 'none'; // 이미지가 없으면 숨깁니다.
+                }
+
+                // 현재 질문의 선택지를 생성합니다.
+                for(let i = 0; i<quizData[answer].choices.length; i++) {
+                    answerBox.innerHTML += '<span class="form-check"><input class="form-check-input" type="radio" name="question" id="question-'+i+'"><label for="question-'+i+'">'+quizData[answer].choices[i]+'</label></span>';
+                }
+
+                inputRadio = document.querySelectorAll('input[type=radio][name=question]');
+                inputRadio.forEach(radio => radio.addEventListener('change', () => {
+                    document.querySelector('.btn-answer').classList.add('active')
+                    btnAnswer.textContent  = '다음문제를 풀어보세요';
+                    const formCheck = radio.closest('.form-check');
+                    document.querySelector('.btn-answer').classList.add('active');
+                    inputRadio.forEach(radio => radio.disabled = true);
+
+                    let selectedIndex = Array.from(inputRadio).findIndex(radio => radio.checked);
+
+                    if (selectedIndex === quizData[answer].answer) {
+                        formCheck.classList.add('correct');
+                        document.querySelector('.btn-answer').classList.add('correct-active');
+                        correctCount++;
+                    } else {
+                        formCheck.classList.add('wrong');
+                        document.querySelectorAll('.form-check')[quizData[answer].answer].classList.add('correct-answer');
+                    }
+                }));
+
+                btnAnswer.textContent  = '정답 확인하기';
+                document.querySelector('.btn-answer').classList.remove('correct-active');
+                document.querySelector('.btn-answer').classList.remove('active');
+
+                progressValue = answer / (quizData.length - 1) * 100;
+                progressBar.style.width = progressValue + '%';
+                
+            });
+
+        })
+
     </script>
   </body>
 </html>
